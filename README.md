@@ -1,46 +1,46 @@
 # WordPress Plugin Scanner
 
-Una herramienta sencilla y eficiente para detectar plugins instalados en sitios de `WordPress`, identificando su versión (cuando esté disponible) para evaluar vulnerabilidades potenciales y fortalecer la seguridad del sitio.
+A simple and efficient tool to detect plugins installed on `WordPress` sites, identifying their version (when available) to evaluate potential vulnerabilities and strengthen the site's security.
 
-## Características
+## Characteristics
 
-- Escanea una lista de plugins populares de `WordPress` en un sitio objetivo.
-- Identifica si un plugin está instalado y extrae su versión (cuando sea posible).
-- Útil para desarrolladores, auditores de seguridad y administradores de sistemas que necesitan entender el entorno de `WordPress` de un sitio.
-- Basado en Python y utiliza las bibliotecas `requests` y `colorama` para un funcionamiento rápido y con una interfaz de línea de comandos colorida.
+- Scans a list of popular `WordPress` plugins on a target site.
+- Identifies if a plugin is installed and extracts its version (when possible).
+- Useful for developers, security auditors, and system administrators who need to understand a site's `WordPress` environment.
+- Based on Python and uses the `requests` and `colorama` libraries for fast operation and a colorful command line interface.
 
-## Instalación
+## Facility
 
-### Requisitos previos
+### Prerequisites
 
-- `Python 3.6` o superior
-- Las siguientes bibliotecas de Python:
+- `Python 3.6` or higher
+- The following Python libraries:
   - `requests`
   - `colorama`
 
-### Instalación de dependencias
+### Installing dependencies
 
-Ejecuta el siguiente comando para instalar las dependencias necesarias:
+Run the following command to install the necessary dependencies:
 
 ```bash
 pip install requests colorama
 ```
 
-## Uso
+## Use
 
-Clona este repositorio o descarga el script.
+Clone this repository or download the script.
 
-### Ejecuta el script en tu terminal con:
+### Run the script in your terminal with:
 
 ```bash
 python3 enumPluginsWordpress.py
 ```
 
-Introduce la URL del sitio `WordPress` que deseas analizar (por ejemplo, http://example.com).
+Enter the URL of the `WordPress` site you want to analyze (for example, http://example.com).
 
-El script buscará los plugins listados en la variable plugins y mostrará los que estén presentes, junto con sus versiones, si se encuentran disponibles.
+The script will search for the plugins listed in the plugins variable and display those that are present, along with their versions, if available.
 
-### Ejemplo de ejecución
+### Execution example:
 
 ```
 [*] Bienvenido al buscador de plugins de WordPress
@@ -57,24 +57,24 @@ Introduce la URL (ejemplo: http://example.com): http://mysite.com
 [*] Búsqueda completada. Sólo se muestran los plugins encontrados.
 ```
 
-## Personalización
+## Customization
 
-La lista de plugins a escanear se encuentra en la variable `plugins` dentro del script. Puedes agregar, `modificar o eliminar` plugins de esta lista según tus necesidades.
+The list of plugins to scan is found in the `plugins` variable within the script. You can add, 'modify or remove' plugins from this list according to your needs.
 
-## Limitaciones
+## Limitations
 
-El script sólo verifica si existe un archivo readme.txt en la ruta estándar del plugin (`/wp-content/plugins/{plugin}/readme.txt`).
-Si el archivo readme.txt no contiene información sobre la versión, esta no será detectada.
-Este script asume que el sitio web utiliza rutas estándar para los plugins. Personalizaciones pueden afectar los resultados.
+The script only checks if a readme.txt file exists in the plugin's standard path (`/wp-content/plugins/{plugin}/readme.txt`).
+If the readme.txt file does not contain version information, the version will not be detected.
+This script assumes that the website uses standard paths for plugins. Customizations may affect results.
 
-## Contribución
+## Contribution
 
-Si deseas mejorar esta herramienta, no dudes en enviar un `pull request` o abrir un issue en este repositorio.
+If you want to improve this tool, feel free to send a pull request or open an issue in this repository.
 
-## Advertencia
+## Warning
 
-Esta herramienta está diseñada para fines educativos y de auditoría de seguridad en sistemas donde tienes permiso para realizar pruebas. El uso no autorizado de esta herramienta contra sitios ajenos está estrictamente prohibido y podría violar leyes locales e internacionales.
+This tool is designed for educational and security auditing purposes on systems where you have permission to perform testing. Unauthorized use of this tool against third-party sites is strictly prohibited and may violate local and international laws.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia `MIT`. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the `MIT` License. See the `LICENSE` file for details.
